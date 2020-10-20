@@ -1,1 +1,57 @@
-.small { font-size: x-small }
+/* > General styles */
+/* >> Basic elements */
+
+body { margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {  }
+
+p { font: normal medium 'Helvetica', sans-serif; }
+
+ul {  }
+
+ol {  }
+
+li {  }
+
+blockquote {  }
+
+table {  }
+
+tr, td {  }
+
+/* >> Sectioning elements */
+
+header { position: fixed; top: 0; text-align: left; color: white; background: black; width: 100%; margin: 0; }
+
+nav { margin-left: 1em; }
+
+menu {  }
+
+aside {  }
+
+article {  }
+
+section {  }
+
+footer { box-sizing: border-box; position: absolute; bottom: 0; text-align: right; padding-right: 16px; width: 100%;}
+
+/* > Classses */
+/* >> Utility classes */
+
+.italic { font-style: italic; }
+
+.bold { font-weight: bold; }
+
+.mono {  }
+
+.small { font-size: x-small; }
+
+/* >> Shared classes */
+
+.tag { font-size: 8pt; font-family:'Verdana', sans-serif; }
+
+/* >> Page-specific classes */
+
+
+
+/* > Specific selectors */
