@@ -8,26 +8,33 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica', sans-serif; }
 
 p { font: medium 'Helvetica', sans-serif; }
 
+pre { font-family: monospace; }
+
 ul {  }
 
 ol {  }
 
 li {  }
 
-blockquote {  }
+blockquote { margin-left: 20px; padding-left: 6px; border-left: solid 3px #007fff; font: italic smaller 'Helvetica', sans-serif; box-sizing: border-box; }
 
 table {  }
 
 tr, td {  }
 
+a { font: medium 'Helvetica', sans-serif; text-decoration: none; }
+
 /* >> Sectioning elements */
 
-header { text-align: left; color: white; background: black; width: 100%; margin: 0; 
+header { text-align: left; color: white; background-color: black; width: 100%; margin: 0; 
 		 grid-area: header; }
 
-nav { margin-left: 1em; }
+nav { margin-left: 1em; overflow: hidden; }
 
 menu {  }
+
+main { margin: 0 1em; max-width: 76ch;
+			  grid-area: content; }
 
 aside {  }
 
@@ -40,8 +47,7 @@ footer { box-sizing: border-box; position: absolute; bottom: 0; text-align: righ
 
 /* Styling elements */
 
-div.content { margin: 0 1em; width: 33%;
-			  grid-area: content; }
+div {  }
 
 /* > Classses */
 /* >> Utility classes */
@@ -56,12 +62,40 @@ div.content { margin: 0 1em; width: 33%;
 
 .right { text-align: right; }
 
+.middle { vertical-align: middle; } /* for images inline with text */
+
 /* >> Shared classes */
 
 .tag { font-size: 8pt; font-family:'Verdana', sans-serif; }
+
+.nav-icon { float: left; }
+
+.nav-item { float: left; padding: 15px; margin: 0; text-align: center; background-color: black; color: white; }
 
 /* >> Page-specific classes */
 
 
 
 /* > Specific selectors */
+
+a:hover { text-decoration: underline; }
+
+blockquote a { font: inherit; }
+
+.tag a { font-style: inherit; font-size: inherit; }
+
+p.nav-item {  }
+
+a.nav-item {  }
+
+.nav-item:hover { background-color: white; }
+
+p.nav-item:hover { color: black; }
+
+a.nav-item:hover { color: black; }
+
+img.nav-icon { margin: 8px 16px 8px 8px; }
+
+div.nav-icon { background-image: url("images/tile.png"); height: 48px; width: 48px; }
+
+div.nav-icon:hover { background-image: url("images/tile_blue.png") }

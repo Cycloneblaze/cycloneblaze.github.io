@@ -2,9 +2,26 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
 		<title>Home</title>
 
-		<!-- js -->
+		<script type="text/javascript">
+			window.onload = function () {
+				var titles = document.getElementsByClassName('nav-item');
+				// find all nav-item elements
+				
+				for (let i = 0; i < titles.length; i++) {
+					// for each item in the above list:
+					if (titles[i].textContent == document.title) {
+					// if it contains text identical to the <title>:
+						titles[i].style.backgroundColor = 'white';
+						titles[i].style.color = 'black';
+						// recolour that item
+					}
+				}
+			}
+		</script>
 		
 		<link rel="stylesheet" type="text/css" href="style.css">
 		
@@ -14,12 +31,14 @@
 	  
 	<body>
 		<header>
+			<a href="http://www.cycloneblaze.net"><div class="nav-icon"><img class="nav-icon" src="images/TheBlueComet_tr.png"></div></a>
 			<nav>
-				<p>A > B > C</p>
+				<a class="nav-item" href="../index.html">Home</a>
+				<p class="nav-item">A > B > C</p>
 			</nav>
 		</header>
 		
-		<div class="content">
+		<main>
 			
 			<h1>Hellu</h1>
 			
@@ -27,14 +46,17 @@
 			
 			<p>For now there is nothing here while I build this site and decide what I want to put on it.</p>
 			
-			<p>If you need to talk to me, maybe you can message me on <a href="https://t.me/Cycloneblaze">Telegram</a>?</p>
+			<p>If you need to talk to me, you can reach me at 📧 <span class="mono">me at cycloneblaze dot net</span>.</p>
+			
+			<p>If you just want to chat, maybe you can message me on <a href="https://t.me/Cycloneblaze">Telegram</a>?</p>
 			
 			<p class="italic right">--Cycloneblaze</p>
 			
-		</div>
+		</main>
 		
 		<footer>
-			<p class="italic tag"><a href="https://github.com/Cycloneblaze/cycloneblaze.github.io/">Hosted</a> on <a href="https://pages.github.com/">GitHub Pages</a></p>
+			<p class="italic tag"><a href="files/impressum.html">Imprint</a> —
+			<a href="https://github.com/Cycloneblaze/cycloneblaze.github.io/">Hosted</a> on <a href="https://pages.github.com/">GitHub Pages</a></p>
 		</footer>
 	</body>
 </html>
