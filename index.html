@@ -6,22 +6,7 @@
 		
 		<title>Home</title>
 
-		<script type="text/javascript">
-			window.onload = function () {
-				var titles = document.getElementsByClassName('nav-item');
-				// find all nav-item elements
-				
-				for (let i = 0; i < titles.length; i++) {
-					// for each item in the above list:
-					if (titles[i].textContent == document.title) {
-					// if it contains text identical to the <title>:
-						titles[i].style.backgroundColor = 'white';
-						titles[i].style.color = 'black';
-						// recolour that item
-					}
-				}
-			}
-		</script>
+		<script src="files/hilite.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="style.css">
 		
@@ -33,7 +18,9 @@
 		<header>
 			<a href="http://www.cycloneblaze.net"><div class="nav-icon"><img class="nav-icon" src="images/TheBlueComet_tr.png"></div></a>
 			<nav>
-				<a class="nav-item" href="../index.html">Home</a>
+				<p class="nav-item" href="index.html">Home</p>
+				<a class="nav-item" href="files/about.html">About me</a>
+				<a class="nav-item" href="files/links.html">Links</a>
 				<p class="nav-item">A > B > C</p>
 			</nav>
 		</header>
@@ -57,7 +44,8 @@
 		</main>
 		
 		<footer>
-			<p class="italic tag"><a href="files/impressum.html">Imprint</a> —
+			<p class="italic tag">© 2020 —
+			<a href="files/impressum.html">Imprint</a> —
 			<a href="https://github.com/Cycloneblaze/cycloneblaze.github.io/">Hosted</a> on <a href="https://pages.github.com/">GitHub Pages</a></p>
 		</footer>
 	</body>

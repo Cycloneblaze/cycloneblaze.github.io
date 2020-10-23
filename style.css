@@ -1,12 +1,20 @@
+/* > At-rules */
+/* >> Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* > General styles */
 /* >> Basic elements */
 
-body { margin: 0; display: grid; 
-	   grid-template-areas: "header" "content" "footer"; grid-template-rows: auto 1fr auto; grid-gap: 0px; }
+html { font-size: 16px; }
+	 /* rem units are proportional to this value (default 16px) */
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica', sans-serif; }
+body { margin: 0; display: grid; /* change to flexbox? */
+	   grid-template-areas: "header" "content" "footer"; grid-template-rows: auto 100% auto; grid-gap: 0px; }
 
-p { font: medium 'Helvetica', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans', sans-serif; margin: 16px 0; }
+
+p { font: 12pt 'Arimo', sans-serif; }
 
 pre { font-family: monospace; }
 
@@ -22,7 +30,7 @@ table {  }
 
 tr, td {  }
 
-a { font: medium 'Helvetica', sans-serif; text-decoration: none; }
+a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 
 /* >> Sectioning elements */
 
@@ -42,7 +50,7 @@ article {  }
 
 section {  }
 
-footer { box-sizing: border-box; position: absolute; bottom: 0; text-align: right; padding-right: 16px; width: 100%;
+footer { box-sizing: border-box; position: static; bottom: 0; text-align: right; padding-right: 16px; width: 100%;
 		 grid-area: footer; }
 
 /* Styling elements */
@@ -78,21 +86,26 @@ div {  }
 
 /* > Specific selectors */
 
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #0000ff); 			
+		  -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+a:active { color: #00ffff; }
 
 blockquote a { font: inherit; }
 
-.tag a { font-style: inherit; font-size: inherit; }
+.tag a { font: italic 8pt 'Verdana', sans-serif; }
+
+.tag a:hover { background: unset; color: #00b5ff; -webkit-text-fill-color: unset; }
 
 p.nav-item {  }
 
-a.nav-item {  }
+a.nav-item { color: white; }
 
 .nav-item:hover { background-color: white; }
 
 p.nav-item:hover { color: black; }
 
-a.nav-item:hover { color: black; }
+a.nav-item:hover { color: black; padding: 15px; -webkit-text-fill-color: unset; background: white; }
 
 img.nav-icon { margin: 8px 16px 8px 8px; }
 
