@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/cycloneblaze
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.cycloneblaze.net
+  * I am cycloneblaze (https://keybase.io/cycloneblaze) on keybase.
+  * I have a public key with fingerprint AF1A CA9E 874E 32F7 769F  4453 D2BD B7C6 C050 802C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f16e75dc80edc5a454af692ca4dc61912f1df6dcc07b7170ecca9112d88a221d0a",
+      "fingerprint": "af1aca9e874e32f7769f4453d2bdb7c6c050802c",
+      "host": "keybase.io",
+      "key_id": "d2bdb7c6c050802c",
+      "kid": "0101f16e75dc80edc5a454af692ca4dc61912f1df6dcc07b7170ecca9112d88a221d0a",
+      "uid": "9d401c4720e998f989b8319f706b4f19",
+      "username": "cycloneblaze"
+    },
+    "service": {
+      "hostname": "www.cycloneblaze.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1603498051,
+  "expire_in": 157680000,
+  "prev": "edfc101bc2fc9deaa20d97567bdde4fd4e6a25bc85d5d09dad6df83e198a49bb",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIpAnicrZJbSFRBGMdXs7CtSDIh6qE4D7602szZc5uFHiqLipIyzR60ZW5nPbmd
+s549uq5aBL1lEXYjCAnLLAoxqoewohIrupBZSHRR1Ioie6iIMgppjhT00GPzMszM
+7/+f//fx9c6aEghmvG6FbWsrl2Zl3L95sjYQPZhY0SgRh6WlSKNUzSc3Hmc86UWr
+LSZFJAABNKHGdZVRA3BGVayoCjY1JFOsMKpBBGUTMlNjlAKd6FAHnFKMIJSZYWBZ
+hgxgKSSZlh3jbsK1bE/YYhNiAXFDV3hYNnVdQ6aiqGEmE0Z0qlGgAgPIVAirnKSv
+EOEITvJCyxF34hCdjPcP/j/nrp20Q0wBkCq6DDhChokMRIwwRKYONKKYEPlgkrs2
+3s4FTdM07ticxHEDl3aEJPFSZ1HuN9ev5jeVSqUK/yYLbe4Jn4TreA514oKo8rxE
+xDfw0olJBSfR315RYtlMtFQI6ribtBxbikBBUs/yzaEGwgoygApDEq9PWC6PWj6h
+6poBxPK/4XXCkjOTilYRKpsUMY6xDBjSVU0njHHFZArXsKwSaqhMZQAxzDRmGmEO
+kYEVRIjkV1djO1JEVkVOHBOeSStmY6/WFbX33KjICmQEA9OmZvqzFghOz/kzgX3L
+sgPHQyND8x4cuxeuK8hdv/zRvuHSprzF6zre146dftA+JfdH+O6pYFd9+YKJLHhj
+fv5g68DebRdmfy0pyz58e1UOOTZ6fc5IODX2+dLF2JO+VPDAwiW75U35H6/Fa0a3
+FD+dKCuqvto73BddND3yrae/oKFt5tazlW8ft70pWZM/rekQqchoWb25u7kx90X3
+yP5He47cmjHaRoukFsXcJd254rZ3lUQafmS7p2P9G763kpUbqq4U9T/e2XlBKwYV
+n8oqncMfGjEvOpou7+370j3+bnxgvOL5UPrVwtC5y8+SJzqzB4qfdh488xBsLZ17
+fvnFnnatIzNvpXaneXgwK3/BRqn558tfe7BKjw==
+=KCIT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cycloneblaze
+
+==================================================================
