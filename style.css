@@ -9,7 +9,7 @@
 html { font-size: 16px; }
 	 /* rem units are proportional to this value (default 16px) */
 
-body { margin: 0; display: flex; flex-direction: column; height: 100%; }
+body { margin: 0; display: flex; flex-direction: column; height: 100vh; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans', sans-serif; margin: 16px 0; }
 
@@ -41,7 +41,7 @@ nav { margin-left: 1em; overflow: hidden; }
 menu {  }
 
 main { margin: 0 1em; max-width: 76ch;
-			  flex: 1 1 auto; }
+	   flex: 1 1 auto; }
 
 aside {  }
 
