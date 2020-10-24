@@ -9,7 +9,8 @@
 html { font-size: 16px; }
 	 /* rem units are proportional to this value (default 16px) */
 
-body { margin: 0; display: flex; flex-direction: column; height: 100%; }
+body { margin: 0; display: grid; /* change to flexbox? */
+	   grid-template-areas: "header" "content" "footer"; grid-template-rows: auto 100% auto; grid-gap: 0px; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans', sans-serif; margin: 16px 0; }
 
@@ -34,14 +35,14 @@ a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 /* >> Sectioning elements */
 
 header { text-align: left; color: white; background-color: black; width: 100%; margin: 0; 
-		 flex: 0 1 auto; /* shorthand for: flex-grow: 0, flex-shrink: 1, flex-basis: auto */ }
+		 grid-area: header; }
 
 nav { margin-left: 1em; overflow: hidden; }
 
 menu {  }
 
 main { margin: 0 1em; max-width: 76ch;
-			  flex: 1 1 auto; }
+			  grid-area: content; }
 
 aside {  }
 
@@ -50,7 +51,7 @@ article {  }
 section {  }
 
 footer { box-sizing: border-box; position: static; bottom: 0; text-align: right; padding-right: 16px; width: 100%;
-		 flex: 0 1 auto; }
+		 grid-area: footer; }
 
 /* Styling elements */
 
