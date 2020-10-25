@@ -1,0 +1,3 @@
+@echo off
+echo starting a HTTP server on port 8000, CTRL+C to stop...
+python -m http.server

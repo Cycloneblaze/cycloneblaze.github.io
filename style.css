@@ -8,7 +8,11 @@
 /* Variables */
 /* >> Colours */
 
-
+:root { --col-index: #0000ff;
+		--col-about: #00bf00; 
+		--col-links: #bfac00; 
+		--col-reach: #bf0000;
+		--col-extra: #ac00bf; }
 
 /* > General styles */
 /* >> Basic elements */
@@ -46,7 +50,7 @@ a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 /* >> Sectioning elements */
 
 header { text-align: left; color: white; background-color: black; width: 100%; margin: 0;
-		 background-image: linear-gradient(-45deg, #00ffff, #00B5ff 10%, #0000ff 30%, #000000 50%);
+		 background-image: linear-gradient(-45deg, #00ffff, #00B5ff 10%, var(--col-index) 30%, #000000 50%);
 		 flex: 0 1 auto; /* shorthand for: flex-grow: 0, flex-shrink: 1, flex-basis: auto */ }
 
 nav { margin-left: 1em; overflow: hidden; }
@@ -99,11 +103,11 @@ div {  }
 
 .nav-icon { float: left; }
 
-.nav-item { float: left; padding: 15px; margin: 0; text-align: center; background-color: black; color: white; }
+.nav-item { float: left; padding: 15px; margin: 0; text-align: center; background-color: black; color: white;  }
 
 /* >> Page-specific classes (and ids) */
 
-#index { border-bottom-color: #0000ff; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #0000ff 50%) 1; }
+#index { border-bottom-color: var(--col-index); border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-index) 50%) 1; }
 
 #about { border-bottom-color: #00bf00; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #00bf00 50%) 1; }
 
@@ -122,9 +126,14 @@ a:active { color: #00ffff; }
 
 blockquote a { font: inherit; }
 
-/* a.index { color: } */
+nav a[href] { border-bottom: 2px solid; }
+nav a[href="/"] { border-bottom-color: var(--col-index); }
+nav a[href="/about/"] { border-bottom-color: var(--col-about); }
+nav a[href="/links/"] { border-bottom-color: var(--col-links); }
+nav a[href="/reach/"] { border-bottom-color: var(--col-reach); }
+nav a[href="/extra/"] { border-bottom-color: var(--col-extra); }
 
-.tag a { font: 8pt 'Verdana', sans-serif; font-style: inherit; text-decoration-color: currentColor; }
+.tag a { font: 8pt 'Verdana', sans-serif; color: #0000ff; font-style: inherit; text-decoration-color: currentColor; }
 
 .tag a:hover { background: unset; color: #00b5ff; -webkit-text-fill-color: unset; }
 
@@ -133,6 +142,8 @@ p.nav-item {  }
 a.nav-item { color: white; }
 
 .nav-item:hover { background-color: white; }
+
+/* .nav-item.mono { background-color: white; color: black; } */
 
 p.nav-item:hover { color: black; }
 
