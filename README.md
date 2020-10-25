@@ -16,3 +16,9 @@ If for some reason you can't install Python 3 but you do have 2, run
 python -m SimpleHTTPServer
 ```
 instead.
+
+## License
+
+This repository and, unless otherwise noted, everything in it is © Cycloneblaze, 2020. All rights reserved.
+
+It's public because it needs to be, and anything you can download from here you could download from the site itself, but please don't steal.

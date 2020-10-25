@@ -1,9 +1,6 @@
-/* > At-rules */
-/* >> Imports */
+/* > Imports */
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-/* >> Media queries */
 
 /* Variables */
 /* >> Colours */
@@ -49,11 +46,11 @@ a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 
 /* >> Sectioning elements */
 
-header { text-align: left; color: white; background-color: black; width: 100%; margin: 0;
+header { text-align: left; color: white; background-color: black; width: 100%; margin: 0; 
 		 background-image: linear-gradient(-45deg, #00ffff, #00B5ff 10%, var(--col-index) 30%, #000000 50%);
 		 flex: 0 1 auto; /* shorthand for: flex-grow: 0, flex-shrink: 1, flex-basis: auto */ }
 
-nav { margin-left: 1em; overflow: hidden; }
+nav { margin-left: 1em; overflow: auto; white-space: nowrap; }
 
 menu {  }
 
@@ -91,11 +88,11 @@ div {  }
 
 /* >> Shared classes */
 
-.tag { font-size: 8pt; font-family:'Verdana', sans-serif; flex: 0 1 auto; }
+.tag { font-size: 8pt; font-family:'Verdana', sans-serif; flex: 0 0 auto; } /* flex-shrink: 0; stops the text from line-wrapping! */
 
 .line { background-color: black; content: ""; display: inline-block; height: 1px; position: relative; vertical-align: middle; }
 
-.line.long { flex: 1 1 auto; margin-right: 1ch; }
+.line.long { flex: 1 1 auto; margin-right: 1ch; } /* could set flex-shrink: 0; on these too but it doesn't make a difference */
 
 .line.int { flex: 0 1 auto; margin: 0 1ch; width: 0.75em; }
 
@@ -103,7 +100,7 @@ div {  }
 
 .nav-icon { float: left; }
 
-.nav-item { float: left; padding: 15px; margin: 0; text-align: center; background-color: black; color: white;  }
+.nav-item { display: inline-block; padding: 15px; margin: 0; text-align: center; background-color: transparent; color: white; }
 
 /* >> Page-specific classes (and ids) */
 
@@ -126,7 +123,7 @@ a:active { color: #00ffff; }
 
 blockquote a { font: inherit; }
 
-nav a[href] { border-bottom: 2px solid; }
+/* nav a[href] { border-bottom: 2px solid; } */
 nav a[href="/"] { border-bottom-color: var(--col-index); }
 nav a[href="/about/"] { border-bottom-color: var(--col-about); }
 nav a[href="/links/"] { border-bottom-color: var(--col-links); }
@@ -154,3 +151,12 @@ img.nav-icon { margin: 8px 16px 8px 8px; }
 div.nav-icon { background-image: url("images/tile.png"); height: 48px; width: 48px; }
 
 div.nav-icon:hover { background-image: url("images/tile_blue.png") }
+
+/* > Media queries */
+/* Need to be at the bottom to override earlier, non-media-dependent rules... */
+
+@media (any-hover: none) {
+  div.nav-icon {
+    background-image: url("images/tile_blue.png");
+  }
+}
