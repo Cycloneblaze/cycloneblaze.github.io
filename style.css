@@ -25,7 +25,8 @@ h1 { border-bottom: 3px solid; }
 
 p { font: 12pt 'Arimo', sans-serif; }
 
-pre { font-family: monospace; }
+pre { font-family: monospace; background-color: #fff; border: solid 2px #007fff; clip-path: inset(0 round 4px); padding: 1ex; margin: 16px 40px 16px 20px; overflow: auto;
+	  border-image: linear-gradient(to right, #f0f0f0 76ch, #fff); filter: opacity(50%) }
 
 ul, ol, li { font: 12pt 'Arimo', sans-serif; }
 
@@ -33,10 +34,12 @@ ul {  }
 
 ol {  }
 
-li {  }
+li { margin-top: 0.15rem; }
 
-blockquote { margin-left: 20px; padding-left: 6px; border-left: solid 3px #007fff; font: italic smaller 'Helvetica', sans-serif; box-sizing: border-box;
-			 border-image: linear-gradient(to top, #0ff, #00b5ff 20%, #00f) 1; }
+blockquote { margin-left: 20px; } /*padding-left: 6px; border-left: solid 3px #007fff; font: italic smaller 'Helvetica', sans-serif; box-sizing: border-box;
+			 border-image: linear-gradient(to top, #0ff, #00b5ff 20%, #00f) 1; } */
+			 
+cite { font: 12pt 'Arimo', sans-serif; }
 
 table {  }
 
@@ -104,31 +107,34 @@ div {  }
 
 /* >> Page-specific classes (and ids) */
 
-#index { border-bottom-color: var(--col-index); border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-index) 50%) 1; }
 
-#about { border-bottom-color: #00bf00; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #00bf00 50%) 1; }
-
-#links { border-bottom-color: #bfac00; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #bfac00 50%) 1; }
-
-#reach { border-bottom-color: #bf0000; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #bf0000 50%) 1; }
-
-#extra { border-bottom-color: #ac00bf; border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #ac00bf 50%) 1; }
 
 /* > Specific selectors */
+
+li:first-child { margin-top: 0; } /* remove top margin on item that starts list */
+
+li li:first-child { margin-top: 0.3rem; } /* ...unless it's a sublist, then make it bigger */
 
 a:hover { text-decoration: underline; background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, #0000ff); 			
 		  -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 a:active { color: #00ffff; }
 
-blockquote a { font: inherit; }
+blockquote p { margin-bottom: 6px; padding-left: 6px; border-left: solid 3px #007fff; font: italic smaller 'Helvetica', sans-serif; box-sizing: border-box;
+			 border-image: linear-gradient(to top, #0ff, #00b5ff 20%, #00f) 1; }
+			 
+blockquote cite { font-style: italic; font-size: smaller; }
 
-/* nav a[href] { border-bottom: 2px solid; } */
-nav a[href="/"] { border-bottom-color: var(--col-index); }
-nav a[href="/about/"] { border-bottom-color: var(--col-about); }
-nav a[href="/links/"] { border-bottom-color: var(--col-links); }
-nav a[href="/reach/"] { border-bottom-color: var(--col-reach); }
-nav a[href="/extra/"] { border-bottom-color: var(--col-extra); }
+blockquote p a { font: inherit; }
+
+blockquote p > em, i { font-style: normal; }
+
+/* nav a[href] { text-decoration: underline double; border-bottom: 0px solid; } */
+/* nav a[href="/"] { text-decoration-color: var(--col-index); border-bottom-color: var(--col-index); } */
+/* nav a[href="/about/"] { text-decoration-color: var(--col-about); border-bottom-color: var(--col-about); } */
+/* nav a[href="/links/"] { text-decoration-color: var(--col-links); border-bottom-color: var(--col-links); } */
+/* nav a[href="/reach/"] { text-decoration-color: var(--col-reach); border-bottom-color: var(--col-reach); } */
+/* nav a[href="/extra/"] { text-decoration-color: var(--col-extra); border-bottom-color: var(--col-extra); } */
 
 .tag a { font: 8pt 'Verdana', sans-serif; color: #0000ff; font-style: inherit; text-decoration-color: currentColor; }
 

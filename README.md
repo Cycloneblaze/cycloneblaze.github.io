@@ -21,4 +21,4 @@ instead.
 
 This repository and, unless otherwise noted, everything in it is © Cycloneblaze, 2020. All rights reserved.
 
-It's public because it needs to be, and anything you can download from here you could download from the site itself, but please don't steal.
+It's public because it needs to be, and anything you can download from here you could download from the site itself, but please don't steal. You're always free to look through it to see how I did something.

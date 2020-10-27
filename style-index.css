@@ -1,0 +1,8 @@
+/* Recolours for homepage */
+
+h1 { border-bottom-color: var(--col-index); border-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-index) 50%) 1; }
+
+a { color: var(--col-index) }
+a:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-index)) }
+
+blockquote p { border-image: linear-gradient(to top, #0ff, #00b5ff 20%, var(--col-index)) 1; }

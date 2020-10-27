@@ -10,7 +10,7 @@ window.onload = function () {
 				}
 				
 				for (let i = 0; i < titles.length; i++) {
-					// for each item in the above list:
+					// for each item in the list of nav-items:
 					if (document.title.includes(titles[i].textContent)) {
 					// if it contains text identical to the <title>:
 						titles[i].style.backgroundColor = 'white';
@@ -20,6 +20,7 @@ window.onload = function () {
 					}
 				}
 				
+				/*
 				var ids = ['index', 'about', 'links', 'reach', 'extra']
 				// list of each possible id (corresponding to website page)
 				for (i = 0; i < ids.length; i++) {
@@ -30,7 +31,8 @@ window.onload = function () {
 						// template literals!
 						// surround a string in `` instead of '' or "", and you can use ${variables} in it
 						styleSheet.insertRule(`a:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-${ ids[i] })) }`, styleSheet.cssRules.length);
+						styleSheet.insertRule(`blockquote { border-image: linear-gradient(to top, #0ff, #00b5ff 20%, var(--col-${ ids[i] })) 1; }`, styleSheet.cssRules.length);
 					}
 				}
-
+				*/
 			}
