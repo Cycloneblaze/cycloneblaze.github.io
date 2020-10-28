@@ -25,8 +25,8 @@ h1 { border-bottom: 3px solid; }
 
 p { font: 12pt 'Arimo', sans-serif; }
 
-pre { font-family: monospace; background-color: #fff; border: solid 2px #007fff; clip-path: inset(0 round 4px); padding: 1ex; margin: 16px 40px 16px 20px; overflow: auto;
-	  border-image: linear-gradient(to right, #f0f0f0 76ch, #fff); filter: opacity(50%) }
+pre { font-family: monospace; background-color: #f0f0f0; padding: 1ex; margin: 16px 40px 16px 20px; overflow: auto;
+	  border: solid 2px #007fff; clip-path: inset(0 round 4px); border-image: linear-gradient(to right, #f0f0f0 76ch, #fff); }
 
 ul, ol, li { font: 12pt 'Arimo', sans-serif; }
 
@@ -41,9 +41,23 @@ blockquote { margin-left: 20px; } /*padding-left: 6px; border-left: solid 3px #0
 			 
 cite { font: 12pt 'Arimo', sans-serif; }
 
-table {  }
+table, thead, tbody, tr, th, td { vertical-align: middle; font-size: small; font-family: 'Helvetica', sans-serif; } /* border: solid 1px blue;  */
 
-tr, td {  }
+table { min-width: 100%; border-left: solid 3px transparent; border-image: linear-gradient(to top, #0ff, #00b5ff 20%, #00f) 1; }
+
+thead {  }
+
+tbody { border-collapse: collapse; }
+
+tr, td { text-align: center; border-collapse: collapse; }
+
+th { background-color: #e0e0e0; font: bold 12pt 'IBM Plex Sans'; }
+
+tr {  }
+
+td { background-color: #f0f0f0; }
+
+caption { caption-side: bottom; font: italic smaller 'Helvetica', sans-serif; }
 
 a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 
@@ -89,6 +103,8 @@ div {  }
 
 .middle { vertical-align: middle; } /* for images inline with text */
 
+.centerImage { text-align: center; }
+
 /* >> Shared classes */
 
 .tag { font-size: 8pt; font-family:'Verdana', sans-serif; flex: 0 0 auto; } /* flex-shrink: 0; stops the text from line-wrapping! */
@@ -129,12 +145,18 @@ blockquote p a { font: inherit; }
 
 blockquote p > em, i { font-style: normal; }
 
+cite:before { content: '—'; }
+
 /* nav a[href] { text-decoration: underline double; border-bottom: 0px solid; } */
 /* nav a[href="/"] { text-decoration-color: var(--col-index); border-bottom-color: var(--col-index); } */
 /* nav a[href="/about/"] { text-decoration-color: var(--col-about); border-bottom-color: var(--col-about); } */
 /* nav a[href="/links/"] { text-decoration-color: var(--col-links); border-bottom-color: var(--col-links); } */
 /* nav a[href="/reach/"] { text-decoration-color: var(--col-reach); border-bottom-color: var(--col-reach); } */
 /* nav a[href="/extra/"] { text-decoration-color: var(--col-extra); border-bottom-color: var(--col-extra); } */
+
+td > img { max-width: 95%; max-height: 10%; padding-top: 3px; } /* max-width of its container, which is the table data box */
+
+table a { font-size: inherit; }
 
 .tag a { font: 8pt 'Verdana', sans-serif; color: #0000ff; font-style: inherit; text-decoration-color: currentColor; }
 
