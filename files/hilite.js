@@ -14,6 +14,7 @@ window.onload = function () {
 					if (document.title.includes(titles[i].textContent)) {
 					// if it contains text identical to the <title>:
 						titles[i].style.backgroundColor = 'white';
+						// titles[i].style.borderBottomColor = 'white';
 						titles[i].style.color = 'black';
 						// recolour that item
 						

@@ -119,7 +119,7 @@ div {  }
 
 .nav-icon { float: left; }
 
-.nav-item { display: inline-block; padding: 15px; margin: 0; text-align: center; background-color: transparent; color: white; }
+.nav-item { display: inline-block; padding: 15px 15px 12px 15px; margin: 0; text-align: center; background-color: transparent; color: white; }
 
 /* >> Page-specific classes (and ids) */
 
@@ -147,12 +147,12 @@ blockquote p > em, i { font-style: normal; }
 
 cite:before { content: '—'; }
 
-/* nav a[href] { text-decoration: underline double; border-bottom: 0px solid; } */
-/* nav a[href="/"] { text-decoration-color: var(--col-index); border-bottom-color: var(--col-index); } */
-/* nav a[href="/about/"] { text-decoration-color: var(--col-about); border-bottom-color: var(--col-about); } */
-/* nav a[href="/links/"] { text-decoration-color: var(--col-links); border-bottom-color: var(--col-links); } */
-/* nav a[href="/reach/"] { text-decoration-color: var(--col-reach); border-bottom-color: var(--col-reach); } */
-/* nav a[href="/extra/"] { text-decoration-color: var(--col-extra); border-bottom-color: var(--col-extra); } */
+nav a[href], nav p { border-bottom: 3px solid white; }
+nav a[href="/"] { border-bottom-color: var(--col-index); }
+nav a[href="/about/"] { border-bottom-color: var(--col-about); }
+nav a[href="/links/"] { border-bottom-color: var(--col-links); }
+nav a[href="/reach/"] { border-bottom-color: var(--col-reach); }
+nav a[href="/extra/"] { border-bottom-color: var(--col-extra); }
 
 td > img { max-width: 95%; max-height: 10%; padding-top: 3px; } /* max-width of its container, which is the table data box */
 
@@ -166,13 +166,20 @@ p.nav-item {  }
 
 a.nav-item { color: white; }
 
-.nav-item:hover { background-color: white; }
+.nav-item:hover { background-color: white; border-bottom-color: white; }
 
 /* .nav-item.mono { background-color: white; color: black; } */
 
 p.nav-item:hover { color: black; }
 
-a.nav-item:hover { color: black; padding: 15px; -webkit-text-fill-color: unset; background: white; }
+a.nav-item:hover { text-decoration: none; padding: 15px 15px 12px 15px; -webkit-text-fill-color: unset; -webkit-background-clip: content-box;
+				   border-bottom-color: transparent; }
+				   
+a[href="/"].nav-item:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-index)); }
+a[href="/about/"].nav-item:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-about)); }
+a[href="/links/"].nav-item:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-links) 75%); }
+a[href="/reach/"].nav-item:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-reach) 75%); }
+a[href="/extra/"].nav-item:hover { background-image: linear-gradient(-45deg, #00ffff, #00B5ff 25%, var(--col-extra)); }
 
 img.nav-icon { margin: 8px 16px 8px 8px; }
 
@@ -186,5 +193,6 @@ div.nav-icon:hover { background-image: url("images/tile_blue.png") }
 @media (any-hover: none) {
   div.nav-icon {
     background-image: url("images/tile_blue.png");
+	/* set the website icon to always have the blue bg when on a mobile device that cannot hover */
   }
 }
