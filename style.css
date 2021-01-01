@@ -95,7 +95,7 @@ div {  }
 
 .bold { font-weight: bold; }
 
-.mono { font-family: monospace; }
+.mono { font-family: monospace; font-size: 15px; }
 
 .small { font-size: x-small; }
 
