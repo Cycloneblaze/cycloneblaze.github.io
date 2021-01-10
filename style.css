@@ -59,6 +59,8 @@ td { background-color: #f0f0f0; }
 
 caption { caption-side: bottom; font: italic smaller 'Helvetica', sans-serif; }
 
+label { font: 12pt 'Arimo', sans-serif; }
+
 a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
 
 /* >> Sectioning elements */
