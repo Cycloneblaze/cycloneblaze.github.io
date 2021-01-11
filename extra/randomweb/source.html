@@ -8,6 +8,14 @@
 
 		<script src="../../files/hilite.js"></script>
 		<script async defer src="https://apis.google.com/js/api.js"></script>
+		<script>
+		function gload() {
+			gapi.load('client:auth2', () => {
+					console.log('pls');
+				});
+		}
+		window.setTimeout(gload, 2*1000);
+		</script>
 		<script defer src="../../files/auth.js"></script>
 		<script defer src="../../files/ranweb.js"></script>
 		<script>
@@ -40,7 +48,8 @@
 			
 			<p id="listP"></p>
 			
-			<div style="text-align:center;">
+			<div id="sdiv" style="text-align:center;"><button id="start_button" style="display:inline;">Start randomweb.exe</button></div>
+			<div id="rdiv" style="text-align:center; display:none;">
 			<select id="ltogen">
 				<option value="main">main</option>
 				<option value="major">major</option>
@@ -52,7 +61,7 @@
 			<button id="btn" type="button" onclick="getChars()">Randomiiiiiiise</button>
 			</div>
 			
-			<pre>
+			<pre id="pre" style="display:none;">
 https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
 https://console.developers.google.com/apis/credentials
 https://cloud.google.com/docs/authentication/api-keys?visit_id=637451297457421443-2578538086&rd=1
@@ -63,8 +72,8 @@ https://developers.google.com/sheets/api/quickstart/js
 
 Encrypted with https://www.maxlaumeister.com/pagecrypt/</pre>
 			
-			<div style="text-align:center;">
-			<label>Use this to login if the script is not yet authorised: </label>
+			<div id="gauth" style="text-align:center; display:none;">
+			<label>If this button says <em>Authorise</em>, click it first: </label>
 			<button id="authorize_button" style="display: none;">Authorize</button>
 			<button id="signout_button" style="display: none;">Sign Out</button>
 			</div>

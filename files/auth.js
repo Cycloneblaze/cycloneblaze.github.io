@@ -11,12 +11,31 @@ var SCOPES = 'https://www.googleapis.com/auth/spreadsheets https://www.googleapi
 
 var authorizeButton = document.getElementById('authorize_button');
 var signoutButton = document.getElementById('signout_button');
+var startButton = document.getElementById('start_button');
+var btnBlock = document.getElementById('gauth');
+var rBlock = document.getElementById('rdiv');
+var sDiv = document.getElementById('sdiv');
+var p = document.getElementById('pre');
 
 /**
 *  On load, called to load the auth2 library and API client library.
 */
 function handleClientLoad() {
-gapi.load('client:auth2', initClient);
+	console.log('handling');
+
+	try {
+		initClient();
+	} catch(e) {
+		gapi.load('client:auth2', () => {
+			initClient();
+		});
+		console.log(e);
+	}
+
+	btnBlock.style.display = 'block';
+	rBlock.style.display = 'block';
+	sDiv.style.display = 'none';
+	p.style.display = 'block';
 }
 
 /**
@@ -24,6 +43,7 @@ gapi.load('client:auth2', initClient);
 *  listeners.
 */
 function initClient() {
+console.log('init');
 gapi.client.init({
   apiKey: API_KEY,
   clientId: CLIENT_ID,
@@ -70,4 +90,4 @@ function handleSignoutClick(event) {
 gapi.auth2.getAuthInstance().signOut();
 }
 
-window.onload = handleClientLoad();
+startButton.onclick = handleClientLoad;
