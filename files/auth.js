@@ -28,6 +28,13 @@ function handleClientLoad() {
 	} catch(e) {
 		gapi.load('client:auth2', () => {
 			initClient();
+			/*
+			* Doesn't work on the encrypted page yet
+			* always get an error as if gapi was never loaded... like
+			* TypeError: Cannot read property 'init' of undefined
+			* at initClient (auth.js:47)
+			* at HTMLButtonElement.handleClientLoad (auth.js:27)
+			*/
 		});
 		console.log(e);
 	}
