@@ -1,6 +1,7 @@
 /* > Imports */
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* family=Arimo:ital,wght@0,400;0,700;1,400;1,700& Arimo is a nicer <p> font but not really necessary */
 
 /* Variables */
 /* >> Colours */
@@ -23,12 +24,12 @@ h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans', sans-serif; margin: 16px 
 
 h1 { border-bottom: 3px solid; }
 
-p { font: 12pt 'Arimo', sans-serif; }
+p { font: 12pt 'Helvetica', sans-serif; }
 
 pre { font-family: monospace; background-color: #f0f0f0; padding: 1ex; margin: 16px 40px 16px 20px; overflow: auto;
 	  border: solid 2px #007fff; clip-path: inset(0 round 4px); border-image: linear-gradient(to right, #f0f0f0 76ch, #fff); }
 
-ul, ol, li { font: 12pt 'Arimo', sans-serif; }
+ul, ol, li { font: 12pt 'Helvetica', sans-serif; }
 
 ul {  }
 
@@ -39,7 +40,7 @@ li { margin-top: 0.15rem; }
 blockquote { margin-left: 20px; } /*padding-left: 6px; border-left: solid 3px #007fff; font: italic smaller 'Helvetica', sans-serif; box-sizing: border-box;
 			 border-image: linear-gradient(to top, #0ff, #00b5ff 20%, #00f) 1; } */
 			 
-cite { font: 12pt 'Arimo', sans-serif; }
+cite { font: 12pt 'Helvetica', sans-serif; }
 
 table, thead, tbody, tr, th, td { vertical-align: middle; font-size: small; font-family: 'Helvetica', sans-serif; } /* border: solid 1px blue;  */
 
@@ -59,9 +60,9 @@ td { background-color: #f0f0f0; }
 
 caption { caption-side: bottom; font: italic smaller 'Helvetica', sans-serif; }
 
-label { font: 12pt 'Arimo', sans-serif; }
+label { font: 12pt 'Helvetica', sans-serif; }
 
-a { font: medium 'Arimo', sans-serif; text-decoration: none; color: #00f; }
+a { font: medium 'Helvetica', sans-serif; text-decoration: none; color: #00f; }
 
 /* >> Sectioning elements */
 
