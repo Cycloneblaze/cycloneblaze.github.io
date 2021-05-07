@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+		<title>NDS - cycloneblaze.net</title>
+    
+    <script src="timedate.js"></script>
+    <script>
+    window.onload = function() {
+      showTime();
+      showDate();
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="webfont.css">
+    <link rel="stylesheet" type="text/css" href="nds.css">
+    
+		<!--<script src="files/hilite.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style-index.css">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+		<link rel="preload" href="images/tile_blue.png" as="image"> -->
+				
+	</head>
+	  
+	<body>
+		<header>
+      <div class="left"><p>NINTENDO</p></div>
+      <div class="right">
+        <p style="border-left: 1px dashed #484848; border-right: 1px dashed #484848;"><time id="clock" onload="showTime()">test</time></p>
+        <p><time id="date" onload="showDate()">text</time></p>
+      </div>
+		</header>
+		
+		<main>
+			<div class="box off"><p>There is no DS Card inserted.</p></div>
+		</main>
+		
+		<footer>
+      <a href="#brightness">☀</a>
+      <a href="#settings">⚙</a>
+      <a href="#alarm">⏰</a>
+		</footer>
+	</body>
+</html>
