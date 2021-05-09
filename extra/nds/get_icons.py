@@ -23,7 +23,7 @@ for i, u in enumerate(urls):
   whole = [u + r for r in rng]
   for req in whole:
     reqs.append(req)
-reqs = reqs[5974:6464] # banner for 5974 is not uploaded on ds-scene
+reqs = reqs[:6464]
 
 saves = 0
 for url in reqs:
@@ -32,8 +32,12 @@ for url in reqs:
   print(f"Fetching banner from {url} now...")
   response = requests.get(f"{url}")
   if response.status_code != 200:
-    print(f"Something went wrong (code {response.status_code})", "Aborting!!")
-    break
+    if response.status_code == 404:
+      print(f"File not found ({ID})")
+      continue
+    else:
+      print(f"Something went wrong (code {response.status_code})", "Aborting!!")
+      break
   
   print(f"Saving banner {ID} now...")
   with open(f"banners/banner_{ID}.png", "wb") as f:
