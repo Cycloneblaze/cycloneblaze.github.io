@@ -1,0 +1,62 @@
+:root { 
+  --dsgrey:    #61829A; /* hsv(205,37%, 60%); */
+  --dsbrown:   #BA4900; /* hsv(23, 100%,72%); */
+  --dsred:     #FB0018; /* hsv(354,100%,98%); */
+  --dspink:    #FB8AFB; /* hsv(300,45%, 98%); */
+  --dsorange:  #FB9200; /* hsv(34, 100%,98%); */
+  --dsyellow:  #F3E300; /* hsv(56, 100%,95%); */
+  --dslime:    #AAFB00; /* hsv(79, 100%,98%); */
+  --dsneon:    #00FB00; /* hsv(120,100%,98%); */
+  --dsgreen:   #00A238; /* hsv(140,100%,63%); */
+  --dssea:     #49DB8A; /* hsv(146,66%, 85%); */
+  --dscyan:    #30BAF3; /* hsv(197,80%, 95%); */
+  --dsblue:    #0059F3; /* hsv(218,100%,95%); */
+  --dsindigo:  #000092; /* hsv(240,100%,57%); */
+  --dsviolet:  #8A00D3; /* hsv(279,100%,82%); */
+  --dspurple:  #D300EB; /* hsv(293,100%,92%); */
+  --dsmagenta: #FB0092; /* hsv(325,100%,98%); */
+  }
+  
+/* formula to lighten a PNG colour with alpha values:
+
+to take saturation S0 to some lower (= paler) saturation S1 (for constant H and V):
+create a layer with a pixel of colour FFFFFF (white) and alpha = rnd(255 * ((100 - S1)/100)) over it, then flatten that layer on top of it
+for example: let S0 = 100, S1 = 58
+then alpha = rnd(255 * ((100 - 58)/100)) = rnd(255 * (42/100)) = rnd(255 * 0.42) = rnd(107.1) = 107
+let S0 = 77, S1 = 67
+alpha = rnd(255 * ((77 - 67)/100)) = rnd(255 * (10/100)) = rnd(255 * 0.10) = rnd(25.5) = 26
+*/
+  
+#dsgrey .color    { background-color: var(--dsgrey);    }
+#dsbrown .color   { background-color: var(--dsbrown);   }
+#dsred .color     { background-color: var(--dsred);     }
+#dspink .color    { background-color: var(--dspink);    }
+#dsorange .color  { background-color: var(--dsorange);  }
+#dsyellow .color  { background-color: var(--dsyellow);  }
+#dslime .color    { background-color: var(--dslime);    }
+#dsneon .color    { background-color: var(--dsneon);    }
+#dsgreen .color   { background-color: var(--dsgreen);   }
+#dssea .color     { background-color: var(--dssea);     }
+#dscyan .color    { background-color: var(--dscyan);    }
+#dsblue .color    { background-color: var(--dsblue);    }
+#dsindigo .color  { background-color: var(--dsindigo);  }
+#dsviolet .color  { background-color: var(--dsviolet);  }
+#dspurple .color  { background-color: var(--dspurple);  }
+#dsmagenta .color { background-color: var(--dsmagenta); }
+
+.colorBox.selected#dsgrey    { border-color: var(--dsgrey);    }
+.colorBox.selected#dsbrown   { border-color: var(--dsbrown);   }
+.colorBox.selected#dsred     { border-color: var(--dsred);     }
+.colorBox.selected#dspink    { border-color: var(--dspink);    }
+.colorBox.selected#dsorange  { border-color: var(--dsorange);  }
+.colorBox.selected#dsyellow  { border-color: var(--dsyellow);  }
+.colorBox.selected#dslime    { border-color: var(--dslime);    }
+.colorBox.selected#dsneon    { border-color: var(--dsneon);    }
+.colorBox.selected#dsgreen   { border-color: var(--dsgreen);   }
+.colorBox.selected#dssea     { border-color: var(--dssea);     }
+.colorBox.selected#dscyan    { border-color: var(--dscyan);    }
+.colorBox.selected#dsblue    { border-color: var(--dsblue);    }
+.colorBox.selected#dsindigo  { border-color: var(--dsindigo);  }
+.colorBox.selected#dsviolet  { border-color: var(--dsviolet);  }
+.colorBox.selected#dspurple  { border-color: var(--dspurple);  }
+.colorBox.selected#dsmagenta { border-color: var(--dsmagenta); }

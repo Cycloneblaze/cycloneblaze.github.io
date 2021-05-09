@@ -6,8 +6,8 @@ function showTime(){
     var ms = date.getMilliseconds(); // 0 - 999;
     var col = ":";
     
-    var tick = new Audio('tick.wav');
-    var tock = new Audio('tock.wav');
+    var tick = new Audio('https://www.cycloneblaze.net/extra/nds/tick.wav');
+    var tock = new Audio('https://www.cycloneblaze.net/extra/nds/tock.wav');
     
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
@@ -17,7 +17,7 @@ function showTime(){
       col = ":";
     }
     if(s % 2 == 1) {
-      col = " ";
+      col = "\u200A\u2006"; //one pixel too narrow but good enough
     }
     
     if(s == 0) {

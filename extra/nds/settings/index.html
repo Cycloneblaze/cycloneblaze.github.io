@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+		<title>NDS - cycloneblaze.net</title>
+    
+    <script src="../timedate.js"></script>
+    <script src="../colourselect.js"></script>
+    <script>
+    window.onload = function() {
+      setSelectors();
+      showTime();
+      showDate();
+      // yeah yeah window.onload is a Sin, I know
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../colors.css">
+    <link rel="stylesheet" type="text/css" href="../webfont.css">
+    <link rel="stylesheet" type="text/css" href="../nds.css">
+    <link rel="stylesheet" type="text/css" href="../banners.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../16ds.ico">
+    
+		<!--<script src="files/hilite.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style-index.css">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+		<link rel="preload" href="images/tile_blue.png" as="image"> -->
+				
+	</head>
+	  
+	<body>
+		<header>
+      <div class="left"><p id="conName">Loading...</p></div>
+      <div class="right">
+        <span class="head time"><p><time id="clock" onload="showTime()">test</time></p></span>
+        <span class="head date"><p><time id="date" onload="showDate()">text</time></p></span>
+        <span class="head scrn touch"></span>
+        <span class="head mode auto"></span>
+      </div>
+		</header>
+		
+		<main>
+      <div class="colorContainer">
+        <div class="colorBox" id="dsgrey"><div class="color"></div></div> <div class="colorBox" id="dsbrown"><div class="color"></div></div> <div class="colorBox selected" id="dsred"><div class="color"></div></div> <div class="colorBox" id="dspink"><div class="color"></div></div>
+        <div class="colorBox" id="dsorange"><div class="color"></div></div> <div class="colorBox" id="dsyellow"><div class="color"></div></div> <div class="colorBox" id="dslime"><div class="color"></div></div> <div class="colorBox" id="dsneon"><div class="color"></div></div>
+        <div class="colorBox" id="dsgreen"><div class="color"></div></div> <div class="colorBox" id="dssea"><div class="color"></div></div> <div class="colorBox" id="dscyan"><div class="color"></div></div> <div class="colorBox" id="dsblue"><div class="color"></div></div>
+        <div class="colorBox" id="dsindigo"><div class="color"></div></div> <div class="colorBox" id="dsviolet"><div class="color"></div></div> <div class="colorBox" id="dspurple"><div class="color"></div></div> <div class="colorBox" id="dsmagenta"><div class="color"></div></div>
+      </div>
+      <div style="height: 33px;"></div>
+      <a href="../"><div class="wide on">
+        <div class="game card b2000"></div>
+        <div class="box on">
+          <span><p>Go back</p></span>
+        </div>
+      </div></a>
+		</main>
+		
+		<footer>
+      <a href="#brightness"></a>
+      <a href="#alarm"></a>
+		</footer>
+	</body>
+</html>

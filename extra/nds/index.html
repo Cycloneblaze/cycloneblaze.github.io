@@ -7,14 +7,17 @@
 		<title>NDS - cycloneblaze.net</title>
     
     <script src="timedate.js"></script>
+    <script src="colourselect.js"></script>
     <script>
     window.onload = function() {
       showTime();
       showDate();
+      getColor();
       // yeah yeah window.onload is a Sin, I know
     }
     </script>
 
+    <link rel="stylesheet" type="text/css" href="colors.css">
     <link rel="stylesheet" type="text/css" href="webfont.css">
     <link rel="stylesheet" type="text/css" href="nds.css">
     <link rel="stylesheet" type="text/css" href="banners.css">
@@ -31,31 +34,16 @@
 	  
 	<body>
 		<header>
-      <div class="left"><p>NINTENDO</p></div>
+      <div class="left"><p id="conName">Loading...</p></div>
       <div class="right">
-        <p style="border-left: 1px dashed #484848; border-right: 1px dashed #484848;"><time id="clock" onload="showTime()">test</time></p>
-        <p><time id="date" onload="showDate()">text</time></p>
+        <span class="head time"><p><time id="clock" onload="showTime()">test</time></p></span>
+        <span class="head date"><p><time id="date" onload="showDate()">text</time></p></span>
+        <span class="head scrn touch"></span>
+        <span class="head mode auto"></span>
       </div>
 		</header>
 		
 		<main>
-			<div class="wide off">
-        <div class="game card"></div>
-        <div class="box off">
-          <span><p>There is no DS Card</p></span>
-          <span><p>inserted.</p></span>
-        </div>
-      </div>
-      <div style="height: 33px;"></div>
-      <div class="wide on">
-        <div class="game card"></div>
-        <div class="box on">
-          <span><p>DS</p></span>
-          <span><p>PLACEHOLDER</p></span>
-          <span><p>NINTENDO</p></span>
-        </div>
-      </div>
-      <div style="height: 33px;"></div>
       <div class="wide on">
         <div class="game card b5585"></div>
         <div class="box on">
@@ -64,12 +52,20 @@
           <span><p>Nintendo</p></span>
         </div>
       </div>
+      <div class="spacer"></div>
+			<div class="wide off">
+        <div class="game pak"></div>
+        <div class="box off">
+          <span><p>There is no Game Pak</p></span>
+          <span><p>inserted.</p></span>
+        </div>
+      </div>
 		</main>
 		
 		<footer>
-      <a href="#brightness">☀</a>
-      <a href="#settings">⚙</a>
-      <a href="#alarm">⏰</a>
+      <a href="#brightness"></a>
+      <a href="settings"></a>
+      <a href="#alarm"></a>
 		</footer>
 	</body>
 </html>
