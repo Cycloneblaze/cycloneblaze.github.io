@@ -23,13 +23,13 @@ for i, u in enumerate(urls):
   whole = [u + r for r in rng]
   for req in whole:
     reqs.append(req)
-reqs = reqs[:6464]
+reqs = reqs[5974:6464] # banner for 5974 is not uploaded on ds-scene
 
 saves = 0
 for url in reqs:
   ID = url[48:52]
   sleep(1)
-  print(f"Fetching banner {ID} now...")
+  print(f"Fetching banner from {url} now...")
   response = requests.get(f"{url}")
   if response.status_code != 200:
     print(f"Something went wrong (code {response.status_code})", "Aborting!!")
