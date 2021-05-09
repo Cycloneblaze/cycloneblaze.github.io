@@ -11,17 +11,32 @@ header p { font-size: 7px; margin: 0 3px; }
 header time { letter-spacing: 1px; }
 
 main { margin: 0 15px; flex: 1 1 auto;
-       display: flex; align-items: center; justify-content: center; /* change this to a grid or sth later */ 
+       display: flex; align-items: center; justify-content: center; flex-direction: column; /* change this to a grid or sth later... maybe grid with unit spaces 47px in size? */ 
        }
 
 footer { display: flex; align-items: center; justify-content: space-between; margin: 0 19px 34px; font-size: 12px; flex: 0 1 auto; }
 
-p { font-family: "NDS12", sans-serif; }
+p { font-family: "NDS12", sans-serif; margin: 0; }
 
 div.right { display: flex; align-items: center; justify-content: space-evenly; }
 
-div.box { height: 40px; width: 141px; border: 1px solid #e0e0e0; background: #f8f8f8; }
+div.box { height: 39px; width: 140px; border: 1px solid black; line-height: 39px; text-align: center;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
-div.box > p { text-align: center; line-height: 10px; }
+div.box span { /* display: inline-block; vertical-align: middle; */ line-height: normal; }
 
-div.off { background-color: #f8f8f8; border-color: #e0e0e0; color: #e0e0e0; }
+div.wide { height: 41px; width: 185px; border: 1px solid white;
+           display: flex; }
+
+div.wide.on  { background-image: url(boxbar.png); outline: 1px solid black; }
+div.wide.off { background-image: url(boxbaroff.png); outline: 1px solid #e3e3e3; }
+
+div.on > div.box  { background-image: url(boxstripe.png); border-color: #a2a2a2; color: #282828; border-left-color: #797979 }
+div.off > div.box { background-color: #fbfbfb; border-color: #e0e0e0; color: #a2a2a2; }
+
+div.game { width: 43px; height: 41px; }
+
+div.game.card { background: no-repeat url(banners/banner_0000.png); background-position: 5px 4px; }
+
+div.off > div.game.card { background: no-repeat url(dscard.png); background-position: 5px 4px; }
+div.off > div.game.pak  { background: no-repeat url(gbapak.png); }

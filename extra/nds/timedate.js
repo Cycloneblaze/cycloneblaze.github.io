@@ -6,28 +6,40 @@ function showTime(){
     var ms = date.getMilliseconds(); // 0 - 999;
     var col = ":";
     
+    var tick = new Audio('tick.wav');
+    var tock = new Audio('tock.wav');
+    
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
     
-    if(ms > 500) {
+    if(s % 2 == 0) {
       col = ":";
     }
-    if(ms <= 500) {
+    if(s % 2 == 1) {
       col = " ";
+    }
+    
+    if(s == 0) {
+      tock.play();
+    }
+    if(s != 0) {
+      tick.play();
     }
     
     var time = h + col + m;
     document.getElementById("clock").innerText = time;
     document.getElementById("clock").textContent = time;
     
-    setTimeout(showTime, 500);    
+    setTimeout(showTime, 1000);    
 }
+
+/* adapted from https://codepen.io/afarrar/pen/JRaEjP */
 
 function showDate(){
     var date = new Date();
-    var d = date.getDay(); // 0 - 28 or 29 or 30 or 31
-    var m = date.getMonth(); // 0 - 12
+    var d = date.getDate(); // 0 - 28 or 29 or 30 or 31
+    var m = date.getMonth() + 1; // 1 - 12
     
     d = (d < 10) ? "0" + d : d;
     m = (m < 10) ? "0" + m : m;
@@ -36,5 +48,5 @@ function showDate(){
     document.getElementById("date").innerText = time;
     document.getElementById("date").textContent = time;
     
-    setTimeout(showDate, 500);    
+    setTimeout(showDate, 1000);    
 }
