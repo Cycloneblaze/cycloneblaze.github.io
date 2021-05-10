@@ -8,11 +8,13 @@
     
     <script src="../timedate.js"></script>
     <script src="../colourselect.js"></script>
+    <script src="../playsounds.js"></script>
     <script>
     window.onload = function() {
       setSelectors();
       showTime();
       showDate();
+      registerSound("return", s_ok);
       // yeah yeah window.onload is a Sin, I know
     }
     </script>
@@ -53,7 +55,7 @@
         <div class="colorBox" id="dsindigo"><div class="color"></div></div> <div class="colorBox" id="dsviolet"><div class="color"></div></div> <div class="colorBox" id="dspurple"><div class="color"></div></div> <div class="colorBox" id="dsmagenta"><div class="color"></div></div>
       </div>
       <div style="height: 33px;"></div>
-      <a href="../"><div class="wide on">
+      <a href="../" id="return"><div class="wide on">
         <div class="game card b2000"></div>
         <div class="box on">
           <span><p>Go back</p></span>

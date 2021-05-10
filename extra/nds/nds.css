@@ -1,6 +1,6 @@
 html { font-size: 10px; overflow: hidden; }
 
-body { background: url(bgtile-big.png); margin: 0;
+body { background: url(bgtile-big.png); background-position: 0 16px; margin: 0;
        display: flex; flex-direction: column; height: 100vh; }
 
 header { background: url(bar_red.png) top repeat; color: white; border-bottom: 1px solid black; height: 15px; flex: 0 1 auto;
@@ -14,7 +14,7 @@ main { margin: 0 15px; flex: 1 1 auto;
        display: flex; align-items: center; justify-content: center; flex-direction: column; /* change this to a grid or sth later... maybe grid with unit spaces 47px in size? */ 
        }
 
-footer { display: flex; align-items: center; justify-content: space-between; margin: 0 34px 32px 18px; flex: 0 1 auto; }
+footer { display: flex; align-items: center; justify-content: space-between; margin: 0 34px 16px 18px; flex: 0 1 auto; }
 
 p { font-family: "NDS12", sans-serif; margin: 0; }
 
