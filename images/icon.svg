@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 8.466666 8.4666664"
+   height="31.999998"
+   width="31.999998">
+  <title
+     id="title847">favicon</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="105"
+     inkscape:window-height="1041"
+     inkscape:window-width="1274"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="18.987586"
+     inkscape:cx="17.310754"
+     inkscape:zoom="11.2"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>favicon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-168.12381,-32.808334)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <image
+       id="image843"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAYUExURQAAAAAm/////wCU/wD//4CAgEBAQAAAAKYnFpYAAAAIdFJOU/////////8A
+3oO9WQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAIlJREFUOE+l01kOgCAMRVGZZP87lkdLGKS0CfcH
+tSdOCU8uPUJ1ZgB8ts0CkHN1kVMByIy854OWCSA68zU65nguA5AQRkLrkAGAAPGFNRXQQ2IcH7Sk
+gtt70IcdiALaz8UA41SaiAr6zwVJ6S397kGrCHr3gMhhvID9xsGrYhV31gT2BPHmPYGcP8sSA9VZ
+QUENAAAAAElFTkSuQmCC
+"
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="8.4666662"
+       width="8.4666662"
+       x="168.12381"
+       y="32.808334" />
+  </g>
+</svg>
