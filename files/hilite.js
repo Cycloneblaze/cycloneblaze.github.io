@@ -1,8 +1,8 @@
 window.onload = function () {
-	var titles = document.getElementsByClassName('nav-item');
+	let titles = document.getElementsByClassName('nav-item');
 	// find all nav-item elements
 	
-	if (titles.length == 1) {
+	if (titles.length === 1) {
 		// if there is only one:
 			titles[0].style.backgroundColor = 'white';
 			titles[0].style.color = 'black';
