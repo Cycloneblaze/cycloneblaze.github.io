@@ -1,7 +1,7 @@
 # cycloneblaze.github.io
 cyclonesite
 
-Now live at: http://www.cycloneblaze.net (or cycloneblaze.eu)
+Now live at: https://www.cycloneblaze.net (or cycloneblaze.eu)
 
 ## Testing
 
