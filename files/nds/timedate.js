@@ -6,8 +6,8 @@ function showTime(){
     let ms = date.getMilliseconds(); // 0 - 999;
     let col = ":";
 
-    const tick = new Audio('https://www.cycloneblaze.net/extra/nds/tick.wav');
-    const tock = new Audio('https://www.cycloneblaze.net/extra/nds/tock.wav');
+    const tick = new Audio('/files/nds/tick.wav');
+    const tock = new Audio('/files/nds/tock.wav');
 
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;

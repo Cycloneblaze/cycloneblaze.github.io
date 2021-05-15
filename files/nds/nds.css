@@ -1,9 +1,9 @@
 html { font-size: 10px; overflow: hidden; }
 
-body { background: url(bgtile-big.png); background-position: 0 16px; margin: 0;
+body { background: url(/images/nds/bgtile-big.png); background-position: 0 16px; margin: 0;
        display: flex; flex-direction: column; height: 100vh; }
 
-header { background: url(bar_red.png) top repeat; color: white; border-bottom: 1px solid black; height: 15px; flex: 0 1 auto;
+header { background: url(/images/nds/bar_red.png) top repeat; color: white; border-bottom: 1px solid black; height: 15px; flex: 0 1 auto;
          display: flex; align-items: center; justify-content: space-between; }
 
 header p { font-size: 7px; margin: 0 3px; }
@@ -20,10 +20,10 @@ p { font-family: "NDS12", sans-serif; margin: 0; }
 
 a { text-decoration: none; }
 
-a[href="#brightness"] { background-image: url(bright_on.png); height: 11px; width: 11px; }
-a[href="settings"] { background-image: url(21ds.png); height: 21px; width: 21px; }
-a:active[href="settings"] { background-image: url(21sd.png); height: 21px; width: 21px; }
-a[href="#alarm"] { background-image: url(alarm.png); height: 11px; width: 11px; }
+a[href="#brightness"] { background-image: url(/images/nds/bright_on.png); height: 11px; width: 11px; }
+a[href="/extra/nds/settings/"] { background-image: url(/images/nds/21ds.png); height: 21px; width: 21px; }
+a:active[href="/extra/nds/settings/"] { background-image: url(/images/nds/21sd.png); height: 21px; width: 21px; }
+a[href="#alarm"] { background-image: url(/images/nds/alarm.png); height: 11px; width: 11px; }
 
 div.right { display: flex; align-items: center; justify-content: space-evenly; text-align: center; }
 
@@ -32,10 +32,10 @@ span.head { border-left: 1px dashed #484848; height: 15px; line-height: 15px; }
 span.mode, span.scrn { width: 15px; background-repeat: no-repeat; background-position: 2px 2px; }
 span.time, span.date { width: 31px; }
 
-span.top { background-image: url(screen-top.png) }
-span.touch { background-image: url(screen-touch.png) }
-span.manual { background-image: url(mode-manual.png) }
-span.auto { background-image: url(mode-auto.png) }
+span.top { background-image: url(/images/nds/screen-top.png) }
+span.touch { background-image: url(/images/nds/screen-touch.png) }
+span.manual { background-image: url(/images/nds/mode-manual.png) }
+span.auto { background-image: url(/images/nds/mode-auto.png) }
 
 div.box { height: 39px; width: 140px; border: 1px solid black; line-height: 39px; text-align: center;
           display: flex; flex-direction: column; align-items: center; justify-content: center; }
@@ -45,20 +45,20 @@ div.box span { /* display: inline-block; vertical-align: middle; */ line-height:
 div.wide { height: 41px; width: 185px; border: 1px solid white;
            display: flex; }
 
-div.wide.on  { background-image: url(boxbar.png); outline: 1px solid black; }
-div.wide.off { background-image: url(boxbaroff.png); outline: 1px solid #e3e3e3; }
+div.wide.on  { background-image: url(/images/nds/boxbar.png); outline: 1px solid black; }
+div.wide.off { background-image: url(/images/nds/boxbaroff.png); outline: 1px solid #e3e3e3; }
 
 div.on > div.box  { background-image: repeating-linear-gradient(#e3e3e3, #e3e3e3 1px, #fbfbfb 1px, #fbfbfb 2px); border-color: #a2a2a2; color: #282828; border-left-color: #797979 }
 div.off > div.box { background-color: #fbfbfb; border-color: #e0e0e0; color: #a2a2a2; }
 
 div.game { width: 43px; height: 41px;  background-position: 5px 4px; background-repeat: no-repeat; }
 
-div.game.card { background-image: url(banners/banner_0000.png);}
+div.game.card { background-image: url(/images/nds/banners/banner_0000.png);}
 
-div.off > div.game.card { background-image: url(dscard.png); }
-div.off > div.game.pak  { background-image: url(gbapak.png); }
+div.off > div.game.card { background-image: url(/images/nds/dscard.png); }
+div.off > div.game.pak  { background-image: url(/images/nds/gbapak.png); }
 
-a:active > div.wide.on { background-image: url(boxbartouch.png); border-color: #a2a2a2; }
+a:active > div.wide.on { background-image: url(/images/nds/boxbartouch.png); border-color: #a2a2a2; }
 a:active div.box { background-image: repeating-linear-gradient(#c3c3c3, #c3c3c3 1px, #a2a2a2 1px, #a2a2a2 2px); border-color: #fbfbfb; border-left-color: #797979; }
 
 div.spacer { height: 33px; }

@@ -9,7 +9,7 @@ function selectColor(elem) {
   elem.classList.add('selected');
 
   const header = document.getElementsByTagName("header")[0];
-  header.style.backgroundImage = "url(/extra/nds/bar_".concat(elem.id, ".png)");
+  header.style.backgroundImage = "url(/images/nds/bar_".concat(elem.id, ".png)");
   
   localStorage.setItem('sel_color', elem.id);
 }
@@ -18,7 +18,7 @@ function getColor() {
   const prev_color = localStorage.getItem('sel_color');
   if (prev_color !== null) {
     const header = document.getElementsByTagName("header")[0];
-    header.style.backgroundImage = "url(/extra/nds/bar_".concat(prev_color, ".png)");
+    header.style.backgroundImage = "url(/images/nds/bar_".concat(prev_color, ".png)");
 	}
 }
 
